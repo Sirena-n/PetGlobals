@@ -1,0 +1,46 @@
+@media (max-width: 370px) {
+    .SingUpBox {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .SingUpBox {
+        width: 40%;
+
+        .SingUpInner {
+            padding: 20px 28px;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .singText {
+                font-size: 12px;
+            }
+
+            form {
+                row-gap: 16px;
+                padding: 15px 0;
+
+                label {
+                    row-gap: 7px;
+                    font-size: 12px;
+
+                    input {
+                        height: 35px;
+                    }
+                }
+
+                .checkbox {
+                    column-gap: 8px;
+                }
+
+                button {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

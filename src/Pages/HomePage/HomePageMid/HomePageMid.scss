@@ -1,0 +1,201 @@
+.benefits {
+    padding: 80px 0;
+    background-color: #393838;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    .container {
+        ul {
+            display: grid;
+            column-gap: 80px;
+            grid-template-columns: repeat(4, 1fr);
+
+            @media (max-width: 900px) {
+                gap: 80px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 370px) {
+                grid-template-columns: 1fr;
+            }
+
+            li {
+                display: grid;
+                color: white;
+                column-gap: 30px;
+                grid-template-rows: 50px 60px;
+                grid-template-columns: 1fr 1fr;
+
+                @media (max-width: 900px) {
+                    gap: 15px;
+                    grid-template-columns: 0.5fr 1fr;
+                    grid-template-rows: 30px 40px;
+                }
+
+                @media (max-width: 370px) {
+                    gap: 5px;
+                    grid-template-columns: 0.3fr 1fr;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    grid-column: 1;
+                    grid-row: 1 / 3;
+                    filter: grayscale(100%) invert(100%) sepia(100%) hue-rotate(90deg);
+
+                    @media (max-width: 370px) {}
+                }
+
+                h3 {
+                    font-size: 60px;
+                    font-weight: 900;
+                    justify-self: center;
+
+                    @media (max-width: 900px) {
+                        font-size: 50px;
+                    }
+                }
+
+                h2 {
+                    white-space: nowrap;
+                    justify-self: center;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+.workAndService {
+    text-align: center;
+    padding-top: 100px;
+
+    ul {
+        gap: 60px;
+        display: grid;
+        padding-top: 60px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 370px) {
+            grid-template-columns: 1fr;
+        }
+
+        li {
+            display: flex;
+            row-gap: 20px;
+            padding: 50px 60px;
+            border-radius: 4px;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f7f7f7;
+
+            @media (max-width: 370px) {}
+
+            div {
+                width: 175px;
+                height: 175px;
+                display: flex;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid red;
+
+                img {
+                    transition: transform 0.3s ease;
+                    transform-origin: center center;
+
+                    &:hover {
+                        transform: scale(1.07);
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 28px;
+            }
+
+            a {
+                color: red;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.questions {
+    padding: 100px 0;
+    text-align: center;
+
+    .questionsInner {
+        display: grid;
+        column-gap: 80px;
+        padding-top: 60px;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
+        ul {
+            display: flex;
+            row-gap: 30px;
+            flex-direction: column;
+
+            li {
+                text-align: left;
+                background-color: #f7f7f7;
+                padding: 20px 15px 30px 40px;
+
+
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 700;
+
+                        @media (max-width: 370px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    @media (max-width: 370px) {
+                        svg {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+
+                    @media (max-width: 370px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        img {
+            border-radius: 4px;
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+    }
+}

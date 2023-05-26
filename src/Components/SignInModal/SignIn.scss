@@ -1,0 +1,88 @@
+.SingInBox {
+    width: 26%;
+    z-index: 23;
+    font-size: 14px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #ffffff;
+
+    .SingInInner {
+        text-align: center;
+        position: relative;
+        padding: 45px 38px 0;
+        transform: rotateY(180deg);
+
+        .close {
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .singText {
+            color: #787A80;
+        }
+
+        form {
+            display: flex;
+            row-gap: 18px;
+            padding: 20px 0;
+            flex-direction: column;
+
+            label {
+                display: flex;
+                row-gap: 10px;
+                text-align: left;
+                flex-direction: column;
+
+                input {
+                    height: 40px;
+                    padding: 0 10px;
+                    border: 1px solid #D7DADD;
+                }
+            }
+
+            .checkbox {
+                display: grid;
+                column-gap: 10px;
+                align-items: center;
+                grid-template-columns: 0.1fr 1fr 1fr;
+
+                @media (max-width: 370px) {
+                    font-size: 10px;
+                }
+
+                .forgotPass {
+                    color: #FF3F3A;
+                    justify-self: end;
+
+                    @media (max-width: 370px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .haveAcc {
+                text-align: left;
+
+                span {
+                    color: #FF3F3A;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                color: white;
+                border-radius: 4px;
+                height: 40px;
+                border: none;
+                background-color: #FF3F3A;
+            }
+        }
+    }
+}
+
+@import './SignIn_media.scss';

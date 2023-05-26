@@ -1,0 +1,77 @@
+.SingUpBox {
+    width: 28%;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #ffffff;
+
+    .SingUpInner {
+        text-align: center;
+        position: relative;
+        padding: 30px 38px 0;
+        transform: rotateY(180deg);
+
+        .close {
+            cursor: pointer;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .singText {
+            color: #787A80;
+        }
+
+        form {
+            display: grid;
+            row-gap: 15px;
+            padding: 15px 0;
+            flex-direction: column;
+
+            label {
+                row-gap: 8px;
+                display: flex;
+                text-align: left;
+                flex-direction: column;
+
+                input {
+                    height: 40px;
+                    padding: 0 10px;
+                    border: 1px solid #D7DADD;
+                }
+            }
+
+            .checkbox {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 0.08fr 1fr;
+
+                .forgotPass {
+                    color: #FF3F3A;
+                    justify-self: end;
+                }
+            }
+
+            .haveAcc {
+                text-align: left;
+
+                span {
+                    color: #FF3F3A;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                color: white;
+                border-radius: 4px;
+                height: 40px;
+                border: none;
+                background-color: #FF3F3A;
+            }
+        }
+    }
+}
+
+@import './SignUp_media.scss'

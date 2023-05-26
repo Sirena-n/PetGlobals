@@ -1,0 +1,30 @@
+.oneCatalogProd {
+    padding: 80px;
+
+    .container {
+        .description {
+            p {
+                font-size: 20px;
+            }
+
+            .imgAndDiv {
+                display: flex;
+                padding: 30px 0;
+                column-gap: 50px;
+                align-items: center;
+
+                .prodimg {
+                    width: 100px;
+                    height: 100px;
+
+                    @media (max-width: 370px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .staticImg{
+                width: 100%;
+            }
+        }
+    }
+}

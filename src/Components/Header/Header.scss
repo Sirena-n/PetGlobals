@@ -1,0 +1,152 @@
+header {
+    color: black;
+    padding: 20px 0;
+
+    @media (max-width: 370px) {
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 70px;
+
+            @media (max-width: 900px) {
+                height: 40px;
+            }
+
+            @media (max-width: 370px) {
+                height: 30px;
+            }
+        }
+
+        nav {
+            display: flex;
+            column-gap: 12em;
+            align-items: center;
+
+            @media (max-width: 900px) {
+                column-gap: 3em;
+            }
+
+            @media (max-width: 370px) {
+                column-gap: 1em;
+            }
+
+            h3 {
+                display: none;
+
+                @media (max-width: 370px) {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    svg {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                column-gap: 40px;
+                align-items: center;
+
+                @media (max-width: 900px) {
+                    column-gap: 30px;
+                }
+
+                @media (max-width: 370px) {
+                    display: none;
+                }
+
+                .active {
+                    a {
+                        color: red;
+                    }
+                }
+
+                li {
+                    font-size: 18px;
+                    cursor: pointer;
+                    font-weight: 700;
+
+                    @media (max-width: 900px) {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: red;
+                    }
+
+                    a {
+                        color: black;
+                        font-size: 22px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+
+                        @media (max-width: 900px) {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+
+            }
+
+            .regist {
+                column-gap: 5px;
+
+                @media (max-width: 370px) {
+                    display: flex;
+
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .activebar {
+                top: 55px;
+                right: 30%;
+                display: flex;
+                height: 150px;
+                padding: 20px;
+                align-items: end;
+                width: fit-content;
+                position: absolute;
+                flex-direction: column;
+                background-color: black;
+
+                li {
+                    a {
+                        color: white;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .accWrapper {
+        top: 0;
+        z-index: 20;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, rgba(49, 50, 50, 0.7) 17%, rgba(191, 191, 191, 0.6));
+    }
+}
+
+@import './Header_media.scss'
